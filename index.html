@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Class 10 Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Class 10</h1>
+    <p id="today"></p>
+  </header>
+
+  <main>
+    <section class="stats" aria-label="Summary">
+      <div class="stat">
+        <span class="stat-value" id="total">0</span>
+        <span class="stat-label">Students</span>
+      </div>
+      <div class="stat present">
+        <span class="stat-value" id="present">0</span>
+        <span class="stat-label">Present today</span>
+      </div>
+      <div class="stat absent">
+        <span class="stat-value" id="absent">0</span>
+        <span class="stat-label">Absent today</span>
+      </div>
+    </section>
+
+    <section class="marks">
+      <h2>Marks (highest first)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Student</th>
+              <th class="num">Maths</th>
+              <th class="num">Science</th>
+              <th class="num">English</th>
+              <th class="num">Total / 300</th>
+              <th>Today</th>
+            </tr>
+          </thead>
+          <tbody id="marks-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
